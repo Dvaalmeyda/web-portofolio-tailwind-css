@@ -160,26 +160,31 @@
                 <h2 class="font-bold text-2xl text-center mb-20">Hubungi Saya</h2>
             </div>
 
+            <!-- START FORM -->
             <div class="max-w-full flex flex-wrap bg-secondary rounded-lg">
                 <div class="w-full lg:w-1/2 mb-10">
-                    <form action="">
+                    <form id="contact-form" action="https://formspree.io/f/xknalqwo" method="POST">
                         <div class="w-full mb-2 p-6">
-                            <label for="name" class="text-base text-primary font-bold bg-secondary">Nama Lengkap</label>
-                            <input type="text" id="name" placeholder="Masukkan nama" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                            <label for="fname" class="text-base text-primary font-bold bg-secondary">Nama Lengkap</label>
+                            <input type="text" id="fname" name="fname" placeholder="Masukkan nama" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
                         </div>
                         <div class="w-full mb-2 p-6">
                             <label for="email" class="text-base text-primary font-bold bg-secondary">Email</label>
-                            <input type="text" id="email" placeholder="Masukkan email" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
                         </div>
                         <div class="w-full mb-2 p-6">
                             <label for="message" class="text-base text-primary font-bold bg-secondary">Pesan</label>
-                            <textarea placeholder="Masukkan pesan" id="message" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                            <textarea placeholder="Masukkan pesan" id="message" name="message" class="w-full bg-secondary border border-primary text-primary p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                         </div>
                         <div class="w-full mb-2 px-6 pb-10">
-                            <button class="w-full text-base font-semibold text-secondary bg-primary px-4 py-2 rounded-md hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                            <button class="w-full text-base font-semibold text-secondary bg-primary px-4 py-2 rounded-md hover:opacity-80 hover:shadow-lg transition duration-500">
+                                Kirim
+                            </button>
+                            <div class="loader ease-linear mt-5 rounded-full border-4 border-t-4 border-secondary h-6 w-6 mx-auto"></div>
                         </div>
                     </form>
                 </div>
+                <!-- END FORM -->
 
                 <div class="w-full p-6 lg:w-1/2 right-0">
                     <h4 class="text-center text-primary font-semibold rounded-lg mb-44">Media Sosial</h4>
@@ -217,9 +222,12 @@
                                 
         </div>
     </section>
+
+    <!-- START FOOTER SECTION -->
     <footer class="w-full bg-secondary text-primary text-center p-3">
         <p> &copy;Divaalmeyda 2023 </p>
     </footer>
+    <!-- END FOOTER SECTION -->
 
 <script src="dist/js/script.js"></script>
 </body>

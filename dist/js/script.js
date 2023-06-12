@@ -40,7 +40,7 @@ contactForm.addEventListener("submit", function (e) {
   })
     .then(() => {
       loader.style.display = "none";
-      window.location.href = "/web-portofolio-tailwind-css/thankyou.html";
+      window.location.href = "web-portofolio-tailwind-css/thankyou.html";
     })
     .catch((e) => alert("Error occured"));
 });

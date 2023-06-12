@@ -40,7 +40,7 @@ contactForm.addEventListener("submit", function (e) {
   })
     .then(() => {
       loader.style.display = "none";
-      window.location.href = "../thankyou.html";
+      window.location.href = ".https://dvaalmeyda.github.io/web-portofolio-tailwind-css/thankyou.html";
     })
     .catch((e) => alert("Error occured"));
 });

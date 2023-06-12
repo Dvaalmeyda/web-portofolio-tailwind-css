@@ -32,29 +32,3 @@ hamburger.addEventListener('click', function(){
 //   loader.style.display = "block";
 //   const url = e.target.action;
 //   const formData = new FormData(contactForm);
-
-<<<<<<< HEAD
-//   fetch(url, {
-//     method: "POST",
-//     body: formData,
-//     mode: "no-cors",
-//   })
-//     .then(() => {
-//       loader.style.display = "none";
-//       window.location.href = "../thankyou.html";
-//     })
-//     .catch((e) => alert("Error occured"));
-// });
-=======
-  fetch(url, {
-    method: "POST",
-    body: formData,
-    mode: "no-cors",
-  })
-    .then(() => {
-      loader.style.display = "none";
-      window.location.href = "https://dvaalmeyda.github.io/web-portofolio-tailwind-css/thankyou.html";
-    })
-    .catch((e) => alert("Error occured"));
-});
->>>>>>> 5bfaf98ffc2a650b94f0e85f885a62435662efca

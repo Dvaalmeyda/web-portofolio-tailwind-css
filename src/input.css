@@ -28,11 +28,11 @@ body {
     @apply scale-0;
 }
 
-.loader {
+/* .loader {
     border-top-color: #0C064E;
     -webkit-animation: spinner 1.5s linear infinite;
     animation: spinner 1.5s linear infinite;
-  }
+  } */
   
   @-webkit-keyframes spinner {
     0% {
